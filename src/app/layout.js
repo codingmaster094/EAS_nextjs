@@ -2,6 +2,7 @@ import "../../public/css/globals.css";
 import "../../public/fonts/font.css";
 import Header from "@/component/Header";
 import Footer from "@/component/Footer"; 
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: "EAS",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <main>{children}</main>
+        <SpeedInsights/>
         <Footer />
       </body>
     </html>
